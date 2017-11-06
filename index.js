@@ -19,21 +19,22 @@ function destructivelyRemoveFirstDriver() {
 
 //const newarr = [...drivers];
 function appendDriver(name){
-  const newdriver = [...drivers, 'name'];
+  const newdrivers = [...drivers, name];
+  return newdrivers;
   //const newarr = drivers.concat(name);
 }
 
 function prependDriver(name){
-  const newarr = [...drivers];
-  newarr.unshift(name);
+  const newdrivers = [name,...drivers];
+  return newdrivers;
 }
 
 function removeLastDriver() {
-  const newarr = [...drivers];
-  newarr.pop();
+  const newdrivers = [...drivers].slice(2);
+  return newdrivers;
 }
-const newarr = [...drivers];
-function removeFirstDriver() {
 
-  newarr.shift();
+function removeFirstDriver() {
+  const newdrivers = [...drivers].slice(1);
+  return newdrivers;
 }
