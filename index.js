@@ -11,11 +11,11 @@ function destructivelyPrependDriver(){
 };
 
 function destructivelyRemoveLastDriver(){
-  return drivers.pop(drivers.length-1);
+  return drivers.pop();
 };
 
 function destructivelyRemoveFirstDriver(){
-  return drivers.shift(drivers[0]);
+  return drivers.shift();
 };
 
 function appendDriver(){
