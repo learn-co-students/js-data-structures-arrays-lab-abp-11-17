@@ -19,21 +19,17 @@ function destructivelyRemoveFirstDriver(){
 };
 
 function appendDriver(){
-  const appendBroom = [...drivers, 'Broom'];
-  return appendBroom;
+  return [...drivers, 'Broom'];
 };
 
 function prependDriver(){
-  const prependArnold = ['Arnold', ...drivers];
-  return prependArnold;
+  return ['Arnold', ...drivers];
 };
 
 function removeLastDriver(){
-  const removeGarfield = drivers.slice(0, drivers.length- 1);
-  return removeGarfield;
+  return drivers.slice(0, drivers.length- 1);
 };
 
 function removeFirstDriver(){
-  const removeMilo = drivers.slice(1);
-  return removeMilo;
+  return drivers.slice(1);
 };
